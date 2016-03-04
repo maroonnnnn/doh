@@ -1,0 +1,15 @@
+//
+//  NewsURLVC.h
+//  Simply_Weather
+//
+//  Created by qianfeng on 16/2/26.
+//  Copyright © 2016年 maroonnnnn. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface NewsURLVC : UIViewController
+
+@property (nonatomic,copy) NSString *url;
+
+@end

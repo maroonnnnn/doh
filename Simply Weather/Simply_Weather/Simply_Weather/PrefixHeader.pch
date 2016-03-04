@@ -1,0 +1,57 @@
+//
+//  PrefixHeader.pch
+//  Simply_Weather
+//
+//  Created by qianfeng on 16/3/1.
+//  Copyright (c) 2016年 maroonnnnn. All rights reserved.
+//
+
+#ifndef Simply_Weather_PrefixHeader_pch
+#define Simply_Weather_PrefixHeader_pch
+
+
+//获取屏幕的宽高
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+#define COLOR [UIColor colorWithRed:0/255.0 green:155/255.0 blue:50/255.0 alpha:0.8]
+#define COLOR1 [UIColor colorWithRed:0/255.0 green:155/255.0 blue:50/255.0 alpha:0.5]
+#define kStatusHeight 20
+#define kScreenW [UIScreen mainScreen].bounds.size.width
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define RGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBColorAlpha(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#define padding 20
+#define itemPerLine 4
+#define kItemW (kScreenW-padding*(itemPerLine+1))/itemPerLine
+#define kItemH 25
+
+//视图控制器
+#import "WeathersVC.h"
+#import "NewsTodayVCs.h"
+#import "SetVC.h"
+#import "NoteVC.h"
+
+//导入第三方策划框架(抽屉库头文件)
+#import "YRSideViewController.h"
+
+#define ARRAY @[@"头条",@"娱乐",@"体育",@"财经",@"科技",@"军事",@"搞笑",@"汽车",@"社会",@"历史",@"教育",@"数码",@"健康",@"游戏",@"时尚",@"女性",@"家居",@"博客",@"NBA",@"专栏",@"育儿",@"八卦",@"星座",@"收藏"]
+#define LINK @[@"news_toutiao",@"news_ent",@"news_sports",@"news_finance",@"news_tech",@"news_mil",@"news_funny",@"news_auto",@"news_sh",@"news_history",@"news_edu",@"news_digital",@"news_health",@"news_game",@"news_fashion",@"news_eladies",@"news_home",@"news_blog",@"news_nba",@"zhuanlan_recommend",@"news_baby",@"news_gossip",@"news_ast",@"news_collection"]
+#define URLLL @"http://api.sina.cn/sinago/list.json?channel="
+
+
+
+typedef enum{
+    topViewClick = 0,
+    FromTopToTop = 1,
+    FromTopToTopLast = 2,
+    FromTopToBottomHead = 3,
+    FromBottomToTopLast = 4
+} animateType;
+
+
+
+
+
+
+#endif

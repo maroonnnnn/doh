@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TEMPCell" rowHeight="181" id="KGk-i7-Jjw" customClass="SetTempCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperature.png" translatesAutoresizingMaskIntoConstraints="NO" id="aZV-Ic-5Qb">
+                        <rect key="frame" x="18" y="13" width="60" height="60"/>
+                        <color key="tintColor" red="0.97734467830000005" green="0.56543125100000002" blue="0.57612185780000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Kut-uk-DeO"/>
+                            <constraint firstAttribute="height" constant="60" id="lWb-L2-rPn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温度的规模" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpd-H6-4W1">
+                        <rect key="frame" x="83" y="23" width="90" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="2pF-5L-oMC"/>
+                            <constraint firstAttribute="height" constant="20" id="vOv-aW-0X5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dpd-H6-4W1" firstAttribute="leading" secondItem="aZV-Ic-5Qb" secondAttribute="trailing" constant="5" id="NHy-Yh-FtH"/>
+                    <constraint firstItem="aZV-Ic-5Qb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Tws-Bo-A2h"/>
+                    <constraint firstItem="aZV-Ic-5Qb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="Xjr-SX-0HQ"/>
+                    <constraint firstItem="dpd-H6-4W1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="15" id="ltQ-R5-tIA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="310" y="379"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="temperature.png" width="64" height="64"/>
+    </resources>
+</document>
