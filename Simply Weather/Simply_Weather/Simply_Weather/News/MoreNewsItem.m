@@ -154,7 +154,7 @@
 - (void)deleteItem:(UIButton *)sender{
     UIButton *button = sender;
     NSInteger index = button.tag;
-    NSString *item
+//    NSString *item
     //删除对应的Item
     [_listArray removeObjectAtIndex:index];
     //更新沙盒
